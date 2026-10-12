@@ -200,6 +200,11 @@ Full agent: https://github.com/eilatchabad-ai/shluchim-ai-tools/tree/main/shabba
 - **Nisan closing line** in the Eilat example: ״בניסן נגאלו, בניסן עתידין
   ליגאל״, Talmud Bavli, Rosh Hashanah 11a (the view of Rabbi Yehoshua),
   checked against the Talmud text on Sefaria.
-- **Torah MCP**: supported as a search tool for the thought, but not used
-  for this sample. The MCP requires signing in, and it could not be reached
-  from the environment where the entry was built and tested.
+- **Torah MCP**: tested on 12 October 2026, after the author signed in. The
+  short query "בא אל התיבה", limited to Likkutei Sichos, returned the Baal
+  Shem Tov's reading in Likkutei Sichos vol. 1, Parshas Noach, sicha 1, in
+  Yiddish: "מען זאל אריינגיין אין די אותיות פון תורה און תפלה". This gives
+  the first half of the sample thought an edited source. The second half
+  ("Noach did not go in alone") comes from the Torat Menachem passage above.
+  The MCP gave no page number, and longer queries timed out; WORKFLOW.md
+  step 4 now carries those lessons.
