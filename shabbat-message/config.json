@@ -1,0 +1,54 @@
+{
+  "_about": "Fill this file once. Every 'FILL' must be replaced before the first run; the script stops and lists what is still missing. README.md explains each field; examples/ has three filled-in configs (Eilat, Jerusalem, New York).",
+
+  "community": {
+    "name": {"en": "FILL: e.g. Chabad of Your Town"},
+    "city": {"en": "FILL: e.g. Your Town"}
+  },
+  "location": {"geonameid": null, "_how": "python tools/build_message.py --find-city \"Your Town\""},
+  "languages": ["en"],
+  "candle_lighting_minutes": 18,
+  "havdalah": {"mode": "tzeit_8.5"},
+  "clock": {"he": "24h", "en": "12h", "fr": "h"},
+  "english_style": "ashkenazi",
+  "use_emoji": true,
+  "own_table": {"csv": null, "max_gap_minutes": 3},
+
+  "times": {
+    "friday": [
+      {"id": "mincha", "label": {"he": "מנחה", "en": "Mincha", "fr": "Minha"},
+       "rule": {"from": "candle", "offset": 0, "round_to": 5, "round": "down"},
+       "evidence": "Default taken from the Eilat rule (RULES.md, rule 1) without its 19:00 summer cap. Change it to your own."}
+    ],
+    "shabbat": [
+      {"id": "shacharit", "label": {"he": "שחרית", "en": "Shacharis", "fr": "Chaharit"}, "fixed": "FILL e.g. 10:00"},
+      {"id": "mincha", "label": {"he": "מנחה", "en": "Mincha", "fr": "Minha"},
+       "rule": {"from": "havdalah", "offset": -90, "round_to": 15, "round": "nearest"},
+       "evidence": "Default taken from the Eilat rule (RULES.md, rule 2) without its 18:45 cap. Change it to your own."}
+    ],
+    "weekdays": [
+      {"id": "shacharit", "label": {"he": "שחרית", "en": "Shacharis", "fr": "Chaharit"}, "fixed": "FILL e.g. 07:00"},
+      {"id": "mincha", "label": {"he": "מנחה", "en": "Mincha", "fr": "Minha"}, "blank_before": true,
+       "carry": {"initial": null},
+       "evidence": "Carried from last week's approved message; set 'initial' to today's time, or replace with a 'fixed' or 'rule'. A tested rule from Eilat: {\"from\": \"sunset_sun\", \"offset\": -25, \"round_to\": 15, \"round\": \"down\", \"hold\": {\"duration\": 25, \"end_within\": 5}} (see RULES.md, rule 4)."}
+    ]
+  },
+
+  "closing": {
+    "always": {"he": "שבת שלום!", "en": "Good Shabbos!", "fr": "Chabat chalom !"},
+    "chol_hamoed": {"he": "חג שמח ושבת שלום!", "en": "Chag Sameach and Good Shabbos!", "fr": "Hag saméah et Chabat chalom !"},
+    "elul": {"he": "כתיבה וחתימה טובה לשנה טובה ומתוקה", "en": "Kesivah vachasimah tovah!", "fr": "Ketiva ve'hatima tova !"},
+    "rosh_chodesh_on_shabbat": {"he": "חודש טוב ומבורך", "en": "Gut Chodesh!", "fr": "Hodech tov !"}
+  },
+
+  "title_overrides": {"he": {}, "en": {}, "fr": {}},
+
+  "weekly_thought": {
+    "enabled": false,
+    "title": {"he": "מחשבה לשבת", "en": "A thought for Shabbos", "fr": "Une pensée pour Chabat"},
+    "max_lines": 3,
+    "max_line_chars": 200,
+    "audience": "a traditional Jew with no background in Chassidus",
+    "sources": ["Torah MCP (https://mcp.shluchimexchange.ai/)", "the shliach's own notebook of the Rebbe's Torah"]
+  }
+}

@@ -1,0 +1,10 @@
+# Saved times from approved weeks: local to each community, never published
+data/state*.json
+# Your own transcription of the Rav's luach: private unless you choose otherwise
+data/my-*.csv
+# Approved messages and weekly-thought files
+output/*
+!output/.gitkeep
+__pycache__/
+*.pyc
+.env

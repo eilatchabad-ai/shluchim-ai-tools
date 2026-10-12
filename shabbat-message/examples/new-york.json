@@ -1,0 +1,51 @@
+{
+  "_about": "EXAMPLE for a Chabad House in New York, English only, 12-hour clock. Candle lighting and Shabbos ends are real Hebcal values. The DAVENING TIMES ARE ILLUSTRATIVE RULES, not the schedule of any real shul: replace them with your own.",
+
+  "community": {
+    "name": {"en": "Chabad House"},
+    "city": {"en": "New York"}
+  },
+  "location": {"geonameid": 5128581},
+  "languages": ["en"],
+  "candle_lighting_minutes": 18,
+  "havdalah": {"mode": "tzeit_8.5"},
+  "clock": {"en": "12h"},
+  "english_style": "ashkenazi",
+  "use_emoji": true,
+  "own_table": {"csv": null, "max_gap_minutes": 3},
+
+  "times": {
+    "friday": [
+      {"id": "mincha", "label": {"en": "Mincha & Kabbalas Shabbos"},
+       "rule": {"from": "candle", "offset": 0, "round_to": 5, "round": "down"}}
+    ],
+    "shabbat": [
+      {"id": "chassidus", "label": {"en": "Chassidus class"}, "fixed": "09:00"},
+      {"id": "shacharis", "label": {"en": "Shacharis"}, "fixed": "10:00"},
+      {"id": "mincha", "label": {"en": "Mincha"},
+       "rule": {"from": "sunset_sat", "offset": -30, "round_to": 5, "round": "down"}}
+    ],
+    "weekdays": [
+      {"id": "shacharis", "label": {"en": "Shacharis (Sun)"}, "fixed": "08:00"},
+      {"id": "shacharis_mf", "label": {"en": "Shacharis (Mon-Fri)"}, "fixed": "07:00"},
+      {"id": "mincha", "label": {"en": "Mincha & Maariv"}, "blank_before": true,
+       "rule": {"from": "sunset_fri", "offset": -10, "round_to": 5, "round": "down"}}
+    ]
+  },
+
+  "closing": {
+    "always": {"en": "Good Shabbos!"},
+    "chol_hamoed": {"en": "Chag Sameach and Good Shabbos!"},
+    "elul": {"en": "Kesivah vachasimah tovah!"},
+    "rosh_chodesh_on_shabbat": {"en": "Gut Chodesh!"}
+  },
+  "title_overrides": {},
+  "weekly_thought": {
+    "enabled": false,
+    "title": {"en": "A thought for Shabbos"},
+    "max_lines": 3,
+    "max_line_chars": 200,
+    "audience": "a traditional Jew with no background in Chassidus",
+    "sources": ["Torah MCP (https://mcp.shluchimexchange.ai/)", "the shliach's own notebook of the Rebbe's Torah"]
+  }
+}

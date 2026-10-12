@@ -1,0 +1,49 @@
+{
+  "_about": "EXAMPLE for a Chabad House in Jerusalem, Hebrew and English. Candle lighting and Shabbat ends are real Hebcal values. The DAVENING TIMES ARE ILLUSTRATIVE RULES, not the schedule of any real shul: replace them with your own.",
+
+  "community": {
+    "name": {"he": "בית חב״ד", "en": "Chabad House"},
+    "city": {"he": "ירושלים", "en": "Jerusalem"}
+  },
+  "location": {"geonameid": 281184},
+  "languages": ["he", "en"],
+  "candle_lighting_minutes": 40,
+  "havdalah": {"mode": "tzeit_8.5"},
+  "clock": {"he": "24h", "en": "24h"},
+  "english_style": "ashkenazi",
+  "use_emoji": true,
+  "own_table": {"csv": null, "max_gap_minutes": 3},
+
+  "times": {
+    "friday": [
+      {"id": "mincha", "label": {"he": "מנחה וקבלת שבת", "en": "Mincha & Kabbalas Shabbos"},
+       "rule": {"from": "sunset_fri", "offset": -15, "round_to": 5, "round": "down"}}
+    ],
+    "shabbat": [
+      {"id": "shacharit", "label": {"he": "שחרית", "en": "Shacharis"}, "fixed": "09:30"},
+      {"id": "mincha", "label": {"he": "מנחה", "en": "Mincha"},
+       "rule": {"from": "havdalah", "offset": -90, "round_to": 15, "round": "nearest"}}
+    ],
+    "weekdays": [
+      {"id": "shacharit", "label": {"he": "שחרית", "en": "Shacharis"}, "fixed": "07:00"},
+      {"id": "mincha", "label": {"he": "מנחה וערבית", "en": "Mincha & Maariv"},
+       "rule": {"from": "sunset_fri", "offset": -15, "round_to": 5, "round": "down"}}
+    ]
+  },
+
+  "closing": {
+    "always": {"he": "שבת שלום!", "en": "Good Shabbos!"},
+    "chol_hamoed": {"he": "חג שמח ושבת שלום!", "en": "Chag Sameach and Good Shabbos!"},
+    "elul": {"he": "כתיבה וחתימה טובה לשנה טובה ומתוקה", "en": "Kesivah vachasimah tovah!"},
+    "rosh_chodesh_on_shabbat": {"he": "חודש טוב ומבורך", "en": "Gut Chodesh!"}
+  },
+  "title_overrides": {},
+  "weekly_thought": {
+    "enabled": false,
+    "title": {"he": "מחשבה לשבת", "en": "A thought for Shabbos"},
+    "max_lines": 3,
+    "max_line_chars": 200,
+    "audience": "a traditional Jew with no background in Chassidus",
+    "sources": ["Torah MCP (https://mcp.shluchimexchange.ai/)", "the shliach's own notebook of the Rebbe's Torah"]
+  }
+}

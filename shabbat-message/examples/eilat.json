@@ -1,0 +1,79 @@
+{
+  "_about": "EXAMPLE: the rules of the Chabad shul in Eilat, Israel, where this agent was first built. The davening rules below were verified against 122 real weekly messages (see RULES.md). Copy this file to config.json only as a starting point; change every time to your own.",
+
+  "community": {
+    "name": {"he": "בית חב״ד", "en": "Chabad House", "fr": "Beth Habad"},
+    "city": {"he": "אילת", "en": "Eilat", "fr": "Eilat"}
+  },
+  "location": {"geonameid": 295277},
+  "languages": ["he", "fr"],
+  "candle_lighting_minutes": 20,
+  "havdalah": {"mode": "tzeit_8.5"},
+  "clock": {"he": "24h", "en": "24h", "fr": "h"},
+  "english_style": "ashkenazi",
+  "use_emoji": true,
+
+  "own_table": {
+    "csv": null,
+    "max_gap_minutes": 3,
+    "_note": "In Eilat the printed luach of the local Rav is the authority and Hebcal is only the cross-check. Point csv at your own transcription, e.g. data/my-zmanim.csv (format in data/own-table.template.csv). Left empty here because the luach is not ours to publish."
+  },
+
+  "times": {
+    "friday": [
+      {"id": "mincha", "label": {"he": "מנחה", "en": "Mincha", "fr": "Minha"},
+       "rule": {"from": "candle", "offset": 0, "round_to": 5, "round": "down", "not_after": "19:00"},
+       "evidence": "Exact in 96 of 122 messages (78%), within 5 min in 120 of 122 (98%). The 19:00 cap holds every June-July week, when candles are 19:18-19:25."}
+    ],
+    "shabbat": [
+      {"id": "shacharit_early", "label": {"he": "שחרית מוקדם (נץ)"}, "languages": ["he"],
+       "carry": {"suggest": {"from": "sunrise_sat", "offset": -70, "round_to": 5, "round": "down", "not_before": "04:45"},
+                 "watch": "sunrise_sat", "alert_minutes": 8, "not_before": "04:45"},
+       "evidence": "Set by hand, not by formula. Copying last week's time was right 71% of the time; the best formula only 43%. Sunrise is used to flag drift of 8+ minutes. Summer floor 04:45 in 18 of 21 June-July weeks."},
+      {"id": "shacharit", "label": {"he": "שחרית שני", "fr": "Chaharit"}, "fixed": "08:30",
+       "evidence": "08:30 in 104 of 105 messages."},
+      {"id": "mincha", "label": {"he": "מנחה", "fr": "Minha"},
+       "rule": {"from": "havdalah", "offset": -90, "round_to": 15, "round": "nearest", "not_after": "18:45"},
+       "evidence": "Exact in 102 of 122 (83%), within 15 min in 122 of 122. 90 minutes beat 95/100/105 in every window tested."}
+    ],
+    "weekdays": [
+      {"id": "selichot_1", "label": {"he": "סליחות #1", "fr": "Selihot #1"}, "fixed": "05:00", "only_in_months": ["Elul"]},
+      {"id": "shacharit_1", "label": {"he": "שחרית מוקדם", "fr": "Chaharit #1"}, "fixed": "06:00",
+       "evidence": "06:00 in 101 of 108 weekday blocks."},
+      {"id": "selichot_2", "label": {"he": "סליחות #2", "fr": "Selihot #2"}, "fixed": "07:00", "only_in_months": ["Elul"], "blank_before": true},
+      {"id": "shacharit_2", "label": {"he": "שחרית שני", "fr": "Chaharit #2"}, "fixed": "08:00",
+       "evidence": "08:00 in 108 of 108."},
+      {"id": "mincha", "label": {"he": "מנחה", "fr": "Minha"}, "blank_before": true,
+       "rule": {"from": "sunset_sun", "offset": -25, "round_to": 15, "round": "down", "not_after": "19:15",
+                "hold": {"duration": 25, "end_within": 5}},
+       "cross_check": {"with": "friday/mincha", "max_minutes": 20},
+       "evidence": "Set by the community in October 2026: Mincha takes about 25 minutes and should end about at sunset, not too late. Sunday's sunset minus 25, rounded DOWN to the quarter hour (weekday Mincha moves in 15-minute steps: 95 of 109 archive weeks; Friday Mincha moves in 5). Cap 19:15, not 19:00 (with 19:00 the older rule fell from 73% to 44%). Hold: last week's time is kept while a Mincha starting then still ends within 5 minutes after Sunday's sunset, so it moves every 2-4 weeks. Within 15 minutes of all archive weeks. Cross-check: in the archive it was always within 10 minutes of Friday Mincha, and with this rule within -15..+20 except the clock-change week; a printed poster 35 minutes off was caught this way."},
+      {"id": "arvit", "label": {"he": "ערבית"}, "languages": ["he"],
+       "rule": {"from": "tzeit_sun", "offset": 0, "round_to": 5, "round": "down"},
+       "evidence": "Approved by the community in October 2026: nightfall on Sunday (sun 7.083 degrees below the horizon), rounded down to 5. Moves 5-10 minutes at a time. Before that it appeared in summer only (28 of 29 archive appearances in May-August)."}
+    ]
+  },
+
+  "closing": {
+    "always": {"he": "שבת שלום!", "en": "Good Shabbos!", "fr": "Chabat chalom !"},
+    "chol_hamoed": {"he": "חג שמח ושבת שלום!", "en": "Chag Sameach and Good Shabbos!", "fr": "Hag saméah et Chabat chalom !"},
+    "elul": {"he": "כתיבה וחתימה טובה לשנה טובה ומתוקה", "en": "Kesivah vachasimah tovah!", "fr": "Ketiva ve'hatima tova !"},
+    "rosh_chodesh_on_shabbat": {"he": "חודש טוב ומבורך", "en": "Gut Chodesh!", "fr": "Hodech tov !"},
+    "nisan": {"he": "״בניסן נגאלו, בניסן עתידין ליגאל״ (ראש השנה יא, א)"}
+  },
+
+  "title_overrides": {
+    "he": {"Ki Tavo": "כי תבא", "Vayakhel-Pekudei": "ויקהל - פקודי", "Achrei Mot-Kedoshim": "אחרי מות - קדושים",
+           "Tazria-Metzora": "תזריע מצורע", "Behar-Bechukotai": "בהר בחוקותי", "Nitzavim-Vayeilech": "ניצבים וילך",
+           "Chukat-Balak": "חוקת - בלק"}
+  },
+
+  "weekly_thought": {
+    "enabled": true,
+    "title": {"he": "מחשבה לשבת", "fr": "Une pensée pour Chabat"},
+    "max_lines": 3,
+    "max_line_chars": 200,
+    "audience": "a traditional Jew with no background in Chassidus",
+    "sources": ["Torah MCP (https://mcp.shluchimexchange.ai/)", "the shliach's own notebook of the Rebbe's Torah"]
+  }
+}

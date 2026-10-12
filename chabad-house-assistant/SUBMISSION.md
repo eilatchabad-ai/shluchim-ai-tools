@@ -12,7 +12,7 @@ An assistant for the Chabad House WhatsApp number or website chat. It answers da
 
 ## Output
 
-Link: <REPO_URL>/chabad-house-assistant/screenshots
+Link: https://github.com/eilatchabad-ai/shluchim-ai-tools/tree/main/chabad-house-assistant/screenshots
 
 Three real screenshots from our live bot, in Hebrew. Private names, private phone numbers and page links are hidden for publication. The mikvah phone numbers are public and were left in.
 
@@ -49,7 +49,7 @@ You are the assistant of {{CHABAD_HOUSE_NAME}}. You answer people who write to t
 ...
 ```
 
-Full prompt (English and Hebrew), facts template, six test conversations and an architecture write-up: <REPO_URL>/chabad-house-assistant
+Full prompt (English and Hebrew), facts template, six test conversations and an architecture write-up: https://github.com/eilatchabad-ai/shluchim-ai-tools/tree/main/chabad-house-assistant
 
 **How to reuse it:** fill in `facts-template.md`, paste the prompt into a Claude Project, a custom GPT, or a WhatsApp bot platform, connect the Torah MCP, and run the six conversations in `TESTS.md`. You don't need to ask us anything.
 

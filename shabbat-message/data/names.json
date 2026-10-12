@@ -1,0 +1,596 @@
+{
+ "_about": "Name tables keyed by the title Hebcal returns in its default (Sephardic) English, with curly apostrophes straightened. 'he' is the plene spelling common in Chabad luchot; 'hebcal_he' is Hebcal's own spelling, kept for cross-checking. 'fr' follows the transliteration conventions of the original Eilat agent (ch = shin, h = chet, no apostrophes) and should be reviewed locally. A name Hebcal returns that is missing here STOPS the run: the agent never guesses a spelling. Per-community spellings go in config.json 'title_overrides'. 'yom_tov_shabbat' names a Shabbat that is also a one-day Yom Tov or Chol HaMoed; it is keyed by the Hebcal holiday name without the day number.",
+ "parashiyot": {
+  "Achrei Mot": {
+   "he": "אחרי מות",
+   "hebcal_he": "אחרי מות",
+   "en_sephardic": "Achrei Mot",
+   "en_ashkenazi": "Achrei Mos",
+   "fr": "Aharei Mot"
+  },
+  "Achrei Mot-Kedoshim": {
+   "he": "אחרי מות-קדושים",
+   "hebcal_he": "אחרי מות־קדשים",
+   "en_sephardic": "Achrei Mot-Kedoshim",
+   "en_ashkenazi": "Achrei Mos-Kedoshim",
+   "fr": "Aharei Mot - Kedochim"
+  },
+  "Balak": {
+   "he": "בלק",
+   "hebcal_he": "בלק",
+   "en_sephardic": "Balak",
+   "en_ashkenazi": "Balak",
+   "fr": "Balak"
+  },
+  "Bamidbar": {
+   "he": "במדבר",
+   "hebcal_he": "במדבר",
+   "en_sephardic": "Bamidbar",
+   "en_ashkenazi": "Bamidbar",
+   "fr": "Bamidbar"
+  },
+  "Bechukotai": {
+   "he": "בחוקותי",
+   "hebcal_he": "בחקתי",
+   "en_sephardic": "Bechukotai",
+   "en_ashkenazi": "Bechukosai",
+   "fr": "Behoukotai"
+  },
+  "Behar": {
+   "he": "בהר",
+   "hebcal_he": "בהר",
+   "en_sephardic": "Behar",
+   "en_ashkenazi": "Behar",
+   "fr": "Behar"
+  },
+  "Behar-Bechukotai": {
+   "he": "בהר-בחוקותי",
+   "hebcal_he": "בהר־בחקתי",
+   "en_sephardic": "Behar-Bechukotai",
+   "en_ashkenazi": "Behar-Bechukosai",
+   "fr": "Behar - Behoukotai"
+  },
+  "Beha'alotcha": {
+   "he": "בהעלותך",
+   "hebcal_he": "בהעלתך",
+   "en_sephardic": "Beha'alotcha",
+   "en_ashkenazi": "Beha'aloscha",
+   "fr": "Behaalotha"
+  },
+  "Bereshit": {
+   "he": "בראשית",
+   "hebcal_he": "בראשית",
+   "en_sephardic": "Bereshit",
+   "en_ashkenazi": "Bereshis",
+   "fr": "Berechit"
+  },
+  "Beshalach": {
+   "he": "בשלח",
+   "hebcal_he": "בשלח",
+   "en_sephardic": "Beshalach",
+   "en_ashkenazi": "Beshalach",
+   "fr": "Bechalah"
+  },
+  "Bo": {
+   "he": "בא",
+   "hebcal_he": "בא",
+   "en_sephardic": "Bo",
+   "en_ashkenazi": "Bo",
+   "fr": "Bo"
+  },
+  "Chayei Sara": {
+   "he": "חיי שרה",
+   "hebcal_he": "חיי שרה",
+   "en_sephardic": "Chayei Sara",
+   "en_ashkenazi": "Chayei Sara",
+   "fr": "Haye Sarah"
+  },
+  "Chukat": {
+   "he": "חוקת",
+   "hebcal_he": "חוקת",
+   "en_sephardic": "Chukat",
+   "en_ashkenazi": "Chukas",
+   "fr": "Houkat"
+  },
+  "Chukat-Balak": {
+   "he": "חוקת-בלק",
+   "hebcal_he": "חוקת־בלק",
+   "en_sephardic": "Chukat-Balak",
+   "en_ashkenazi": "Chukas-Balak",
+   "fr": "Houkat - Balak"
+  },
+  "Devarim": {
+   "he": "דברים",
+   "hebcal_he": "דברים",
+   "en_sephardic": "Devarim",
+   "en_ashkenazi": "Devarim",
+   "fr": "Devarim"
+  },
+  "Eikev": {
+   "he": "עקב",
+   "hebcal_he": "עקב",
+   "en_sephardic": "Eikev",
+   "en_ashkenazi": "Eikev",
+   "fr": "Ekev"
+  },
+  "Emor": {
+   "he": "אמור",
+   "hebcal_he": "אמור",
+   "en_sephardic": "Emor",
+   "en_ashkenazi": "Emor",
+   "fr": "Emor"
+  },
+  "Ha'azinu": {
+   "he": "האזינו",
+   "hebcal_he": "האזינו",
+   "en_sephardic": "Ha'azinu",
+   "en_ashkenazi": "Ha'azinu",
+   "fr": "Haazinou"
+  },
+  "Kedoshim": {
+   "he": "קדושים",
+   "hebcal_he": "קדשים",
+   "en_sephardic": "Kedoshim",
+   "en_ashkenazi": "Kedoshim",
+   "fr": "Kedochim"
+  },
+  "Ki Tavo": {
+   "he": "כי תבוא",
+   "hebcal_he": "כי־תבוא",
+   "en_sephardic": "Ki Tavo",
+   "en_ashkenazi": "Ki Savo",
+   "fr": "Ki Tavo"
+  },
+  "Ki Teitzei": {
+   "he": "כי תצא",
+   "hebcal_he": "כי־תצא",
+   "en_sephardic": "Ki Teitzei",
+   "en_ashkenazi": "Ki Seitzei",
+   "fr": "Ki Tetze"
+  },
+  "Ki Tisa": {
+   "he": "כי תשא",
+   "hebcal_he": "כי תשא",
+   "en_sephardic": "Ki Tisa",
+   "en_ashkenazi": "Ki Sisa",
+   "fr": "Ki Tissa"
+  },
+  "Korach": {
+   "he": "קרח",
+   "hebcal_he": "קורח",
+   "en_sephardic": "Korach",
+   "en_ashkenazi": "Korach",
+   "fr": "Korah"
+  },
+  "Lech-Lecha": {
+   "he": "לך לך",
+   "hebcal_he": "לך־לך",
+   "en_sephardic": "Lech-Lecha",
+   "en_ashkenazi": "Lech-Lecha",
+   "fr": "Leh Leha"
+  },
+  "Matot-Masei": {
+   "he": "מטות-מסעי",
+   "hebcal_he": "מטות־מסעי",
+   "en_sephardic": "Matot-Masei",
+   "en_ashkenazi": "Matos-Masei",
+   "fr": "Matot - Massei"
+  },
+  "Metzora": {
+   "he": "מצורע",
+   "hebcal_he": "מצרע",
+   "en_sephardic": "Metzora",
+   "en_ashkenazi": "Metzora",
+   "fr": "Metzora"
+  },
+  "Miketz": {
+   "he": "מקץ",
+   "hebcal_he": "מקץ",
+   "en_sephardic": "Miketz",
+   "en_ashkenazi": "Miketz",
+   "fr": "Miketz"
+  },
+  "Mishpatim": {
+   "he": "משפטים",
+   "hebcal_he": "משפטים",
+   "en_sephardic": "Mishpatim",
+   "en_ashkenazi": "Mishpatim",
+   "fr": "Michpatim"
+  },
+  "Nasso": {
+   "he": "נשא",
+   "hebcal_he": "נשא",
+   "en_sephardic": "Nasso",
+   "en_ashkenazi": "Nasso",
+   "fr": "Nasso"
+  },
+  "Nitzavim": {
+   "he": "ניצבים",
+   "hebcal_he": "נצבים",
+   "en_sephardic": "Nitzavim",
+   "en_ashkenazi": "Nitzavim",
+   "fr": "Nitzavim"
+  },
+  "Nitzavim-Vayeilech": {
+   "he": "ניצבים-וילך",
+   "hebcal_he": "נצבים־וילך",
+   "en_sephardic": "Nitzavim-Vayeilech",
+   "en_ashkenazi": "Nitzavim-Vayeilech",
+   "fr": "Nitzavim - Vayeleh"
+  },
+  "Noach": {
+   "he": "נח",
+   "hebcal_he": "נח",
+   "en_sephardic": "Noach",
+   "en_ashkenazi": "Noach",
+   "fr": "Noah"
+  },
+  "Pekudei": {
+   "he": "פקודי",
+   "hebcal_he": "פקודי",
+   "en_sephardic": "Pekudei",
+   "en_ashkenazi": "Pekudei",
+   "fr": "Pekoude"
+  },
+  "Pinchas": {
+   "he": "פנחס",
+   "hebcal_he": "פינחס",
+   "en_sephardic": "Pinchas",
+   "en_ashkenazi": "Pinchas",
+   "fr": "Pinhas"
+  },
+  "Re'eh": {
+   "he": "ראה",
+   "hebcal_he": "ראה",
+   "en_sephardic": "Re'eh",
+   "en_ashkenazi": "Re'eh",
+   "fr": "Ree"
+  },
+  "Shemot": {
+   "he": "שמות",
+   "hebcal_he": "שמות",
+   "en_sephardic": "Shemot",
+   "en_ashkenazi": "Shemos",
+   "fr": "Chemot"
+  },
+  "Shmini": {
+   "he": "שמיני",
+   "hebcal_he": "שמיני",
+   "en_sephardic": "Shmini",
+   "en_ashkenazi": "Shmini",
+   "fr": "Chemini"
+  },
+  "Shoftim": {
+   "he": "שופטים",
+   "hebcal_he": "שופטים",
+   "en_sephardic": "Shoftim",
+   "en_ashkenazi": "Shoftim",
+   "fr": "Choftim"
+  },
+  "Sh'lach": {
+   "he": "שלח",
+   "hebcal_he": "שלח־לך",
+   "en_sephardic": "Sh'lach",
+   "en_ashkenazi": "Sh'lach",
+   "fr": "Chelah"
+  },
+  "Tazria": {
+   "he": "תזריע",
+   "hebcal_he": "תזריע",
+   "en_sephardic": "Tazria",
+   "en_ashkenazi": "Tazria",
+   "fr": "Tazria"
+  },
+  "Tazria-Metzora": {
+   "he": "תזריע-מצורע",
+   "hebcal_he": "תזריע־מצרע",
+   "en_sephardic": "Tazria-Metzora",
+   "en_ashkenazi": "Tazria-Metzora",
+   "fr": "Tazria - Metzora"
+  },
+  "Terumah": {
+   "he": "תרומה",
+   "hebcal_he": "תרומה",
+   "en_sephardic": "Terumah",
+   "en_ashkenazi": "Terumah",
+   "fr": "Terouma"
+  },
+  "Tetzaveh": {
+   "he": "תצוה",
+   "hebcal_he": "תצוה",
+   "en_sephardic": "Tetzaveh",
+   "en_ashkenazi": "Tetzaveh",
+   "fr": "Tetzave"
+  },
+  "Toldot": {
+   "he": "תולדות",
+   "hebcal_he": "תולדות",
+   "en_sephardic": "Toldot",
+   "en_ashkenazi": "Toldos",
+   "fr": "Toldot"
+  },
+  "Tzav": {
+   "he": "צו",
+   "hebcal_he": "צו",
+   "en_sephardic": "Tzav",
+   "en_ashkenazi": "Tzav",
+   "fr": "Tzav"
+  },
+  "Vaera": {
+   "he": "וארא",
+   "hebcal_he": "וארא",
+   "en_sephardic": "Vaera",
+   "en_ashkenazi": "Vaera",
+   "fr": "Vaera"
+  },
+  "Vaetchanan": {
+   "he": "ואתחנן",
+   "hebcal_he": "ואתחנן",
+   "en_sephardic": "Vaetchanan",
+   "en_ashkenazi": "Vaeschanan",
+   "fr": "Vaethanan"
+  },
+  "Vayakhel": {
+   "he": "ויקהל",
+   "hebcal_he": "ויקהל",
+   "en_sephardic": "Vayakhel",
+   "en_ashkenazi": "Vayakhel",
+   "fr": "Vayakhel"
+  },
+  "Vayakhel-Pekudei": {
+   "he": "ויקהל-פקודי",
+   "hebcal_he": "ויקהל־פקודי",
+   "en_sephardic": "Vayakhel-Pekudei",
+   "en_ashkenazi": "Vayakhel-Pekudei",
+   "fr": "Vayakhel - Pekoude"
+  },
+  "Vayechi": {
+   "he": "ויחי",
+   "hebcal_he": "ויחי",
+   "en_sephardic": "Vayechi",
+   "en_ashkenazi": "Vayechi",
+   "fr": "Vayehi"
+  },
+  "Vayeilech": {
+   "he": "וילך",
+   "hebcal_he": "וילך",
+   "en_sephardic": "Vayeilech",
+   "en_ashkenazi": "Vayeilech",
+   "fr": "Vayeleh"
+  },
+  "Vayera": {
+   "he": "וירא",
+   "hebcal_he": "וירא",
+   "en_sephardic": "Vayera",
+   "en_ashkenazi": "Vayera",
+   "fr": "Vayera"
+  },
+  "Vayeshev": {
+   "he": "וישב",
+   "hebcal_he": "וישב",
+   "en_sephardic": "Vayeshev",
+   "en_ashkenazi": "Vayeshev",
+   "fr": "Vayechev"
+  },
+  "Vayetzei": {
+   "he": "ויצא",
+   "hebcal_he": "ויצא",
+   "en_sephardic": "Vayetzei",
+   "en_ashkenazi": "Vayetzei",
+   "fr": "Vayetze"
+  },
+  "Vayigash": {
+   "he": "ויגש",
+   "hebcal_he": "ויגש",
+   "en_sephardic": "Vayigash",
+   "en_ashkenazi": "Vayigash",
+   "fr": "Vayigach"
+  },
+  "Vayikra": {
+   "he": "ויקרא",
+   "hebcal_he": "ויקרא",
+   "en_sephardic": "Vayikra",
+   "en_ashkenazi": "Vayikra",
+   "fr": "Vayikra"
+  },
+  "Vayishlach": {
+   "he": "וישלח",
+   "hebcal_he": "וישלח",
+   "en_sephardic": "Vayishlach",
+   "en_ashkenazi": "Vayishlach",
+   "fr": "Vayichlah"
+  },
+  "Yitro": {
+   "he": "יתרו",
+   "hebcal_he": "יתרו",
+   "en_sephardic": "Yitro",
+   "en_ashkenazi": "Yisro",
+   "fr": "Yitro"
+  }
+ },
+ "special_shabbatot": {
+  "Shabbat Shuva": {
+   "he": "שבת שובה",
+   "en_sephardic": "Shabbat Shuva",
+   "en_ashkenazi": "Shabbos Shuvah",
+   "fr": "Chouva"
+  },
+  "Shabbat Shirah": {
+   "he": "שבת שירה",
+   "en_sephardic": "Shabbat Shirah",
+   "en_ashkenazi": "Shabbos Shirah",
+   "fr": "Chira"
+  },
+  "Shabbat Shekalim": {
+   "he": "שבת שקלים",
+   "en_sephardic": "Shabbat Shekalim",
+   "en_ashkenazi": "Shabbos Shekalim",
+   "fr": "Chekalim"
+  },
+  "Shabbat Zachor": {
+   "he": "שבת זכור",
+   "en_sephardic": "Shabbat Zachor",
+   "en_ashkenazi": "Shabbos Zachor",
+   "fr": "Zahor"
+  },
+  "Shabbat Parah": {
+   "he": "שבת פרה",
+   "en_sephardic": "Shabbat Parah",
+   "en_ashkenazi": "Shabbos Parah",
+   "fr": "Para"
+  },
+  "Shabbat HaChodesh": {
+   "he": "שבת החודש",
+   "en_sephardic": "Shabbat HaChodesh",
+   "en_ashkenazi": "Shabbos HaChodesh",
+   "fr": "Hahodech"
+  },
+  "Shabbat HaGadol": {
+   "he": "שבת הגדול",
+   "en_sephardic": "Shabbat HaGadol",
+   "en_ashkenazi": "Shabbos HaGadol",
+   "fr": "Hagadol"
+  },
+  "Shabbat Chazon": {
+   "he": "שבת חזון",
+   "en_sephardic": "Shabbat Chazon",
+   "en_ashkenazi": "Shabbos Chazon",
+   "fr": "Hazon"
+  },
+  "Shabbat Nachamu": {
+   "he": "שבת נחמו",
+   "en_sephardic": "Shabbat Nachamu",
+   "en_ashkenazi": "Shabbos Nachamu",
+   "fr": "Nahamou"
+  }
+ },
+ "months": {
+  "Tishrei": {
+   "he": "תשרי",
+   "en_sephardic": "Tishrei",
+   "en_ashkenazi": "Tishrei",
+   "fr": "Tichri"
+  },
+  "Cheshvan": {
+   "he": "חשוון",
+   "en_sephardic": "Cheshvan",
+   "en_ashkenazi": "Cheshvan",
+   "fr": "Hechvan"
+  },
+  "Kislev": {
+   "he": "כסלו",
+   "en_sephardic": "Kislev",
+   "en_ashkenazi": "Kislev",
+   "fr": "Kislev"
+  },
+  "Tevet": {
+   "he": "טבת",
+   "en_sephardic": "Tevet",
+   "en_ashkenazi": "Teves",
+   "fr": "Tevet"
+  },
+  "Sh'vat": {
+   "he": "שבט",
+   "en_sephardic": "Shevat",
+   "en_ashkenazi": "Shevat",
+   "fr": "Chevat"
+  },
+  "Adar": {
+   "he": "אדר",
+   "en_sephardic": "Adar",
+   "en_ashkenazi": "Adar",
+   "fr": "Adar"
+  },
+  "Adar I": {
+   "he": "אדר א׳",
+   "en_sephardic": "Adar I",
+   "en_ashkenazi": "Adar I",
+   "fr": "Adar I"
+  },
+  "Adar II": {
+   "he": "אדר ב׳",
+   "en_sephardic": "Adar II",
+   "en_ashkenazi": "Adar II",
+   "fr": "Adar II"
+  },
+  "Nisan": {
+   "he": "ניסן",
+   "en_sephardic": "Nisan",
+   "en_ashkenazi": "Nissan",
+   "fr": "Nissan"
+  },
+  "Iyyar": {
+   "he": "אייר",
+   "en_sephardic": "Iyar",
+   "en_ashkenazi": "Iyar",
+   "fr": "Iyar"
+  },
+  "Sivan": {
+   "he": "סיוון",
+   "en_sephardic": "Sivan",
+   "en_ashkenazi": "Sivan",
+   "fr": "Sivan"
+  },
+  "Tamuz": {
+   "he": "תמוז",
+   "en_sephardic": "Tammuz",
+   "en_ashkenazi": "Tammuz",
+   "fr": "Tamouz"
+  },
+  "Av": {
+   "he": "מנחם אב",
+   "en_sephardic": "Menachem Av",
+   "en_ashkenazi": "Menachem Av",
+   "fr": "Menahem Av"
+  },
+  "Elul": {
+   "he": "אלול",
+   "en_sephardic": "Elul",
+   "en_ashkenazi": "Elul",
+   "fr": "Eloul"
+  }
+ },
+ "yom_tov_shabbat": {
+  "Sukkot": {
+   "he": "חג הסוכות",
+   "en_sephardic": "Sukkot",
+   "en_ashkenazi": "Sukkos",
+   "fr": "Souccot"
+  },
+  "Sukkot Chol HaMoed": {
+   "he": "חול המועד סוכות",
+   "en_sephardic": "Chol HaMoed Sukkot",
+   "en_ashkenazi": "Chol HaMoed Sukkos",
+   "fr": "Hol Hamoed Souccot"
+  },
+  "Shmini Atzeret": {
+   "he": "שמיני עצרת / שמחת תורה",
+   "en_sephardic": "Shmini Atzeret / Simchat Torah",
+   "en_ashkenazi": "Shemini Atzeres / Simchas Torah",
+   "fr": "Chemini Atséret / Simhat Torah",
+   "_note": "Only reachable in Israel, where both fall on the same day"
+  },
+  "Pesach": {
+   "he": "חג הפסח",
+   "en_sephardic": "Pesach",
+   "en_ashkenazi": "Pesach"
+  },
+  "Pesach Chol HaMoed": {
+   "he": "חול המועד פסח",
+   "en_sephardic": "Chol HaMoed Pesach",
+   "en_ashkenazi": "Chol HaMoed Pesach",
+   "fr": "Hol Hamoed Pessah"
+  },
+  "Pesach VII": {
+   "he": "שביעי של פסח",
+   "en_sephardic": "Shvi'i shel Pesach",
+   "en_ashkenazi": "Shvi'i shel Pesach",
+   "fr": "Chevii chel Pessah"
+  },
+  "Shavuot": {
+   "he": "חג השבועות",
+   "en_sephardic": "Shavuot",
+   "en_ashkenazi": "Shavuos"
+  }
+ }
+}
