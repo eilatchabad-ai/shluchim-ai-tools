@@ -79,14 +79,17 @@ for each one (for example: "candle lighting 5:56 pm, rounded down to 5 ->
 
 STEP 4 (only if I said yes to the thought for Shabbat). If you have the
 Torah MCP (https://mcp.shluchimexchange.ai/) connected, search it for an
-idea of the Rebbe on this week's parasha. Before using it, read the passage
+idea of the Rebbe on this week's parasha. Search with a short query of 2 to
+4 words, limited to one corpus such as Likkutei Sichos. Long queries time
+out, so on a timeout try again with fewer words. Before using it, read the passage
 itself as the MCP returns it, and confirm who says what (a summary can put
 one author's words in another's mouth). Then write at most 3 short lines
 for a traditional Jew with no background in Chassidus: one line of
 background on the parasha, then the idea, with every step explained. Your
 own words; never a published translation's wording. Put NO source in the
 message. Give me the full source separately, after the message: book,
-volume, sicha or section, page, and how you read it. If you do not have the
+volume, sicha or section, page (or "page not given" if the tool returned
+none; never a page from memory), and how you read it. If you do not have the
 MCP, cannot read the passage itself, or have any doubt: no thought this
 week, and say why. Never cite a source you did not open.
 

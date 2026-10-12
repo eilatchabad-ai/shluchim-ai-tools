@@ -88,6 +88,11 @@ claude mcp add --transport http torah https://mcp.shluchimexchange.ai/
 then type `/mcp` inside Claude Code and sign in. In Codex, add the same URL
 as a remote MCP server in the Codex MCP settings.
 
+To check that it works, open a NEW session (a session started before the
+sign-in does not load the server) and ask it to list the tools of the server
+named `torah`, then to search `בא אל התיבה` in Likkutei Sichos. Short
+queries work and long ones time out; see WORKFLOW.md step 4.
+
 A notebook of the Rebbe's Torah that you keep yourself (for example in
 NotebookLM) can be used to find an idea too. Whatever the search tool, the
 passage is then read in the book itself before it is used: a notebook once

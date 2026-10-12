@@ -41,6 +41,16 @@
    1. Find an idea on this week's parasha in the Rebbe's Torah, with the
       Torah MCP (`https://mcp.shluchimexchange.ai/`, START_HERE.md section 4)
       or the shliach's own notebook of the Rebbe's Torah.
+      **Searching the Torah MCP (tested October 2026):**
+      - Use a short query of 2 to 4 words, such as `בא אל התיבה`, and limit
+        it to one corpus, such as Likkutei Sichos. Long queries time out and
+        come back empty.
+      - On a timeout, try again with fewer words. An empty answer from the
+        synthesis tool ("no strong source") does not mean the source doesn't
+        exist; go back to the short search.
+      - The results give book, volume, parasha and sicha, but often no page.
+        Then record what came back and write "page not given". Never fill in
+        a page from memory.
    2. **Read the passage itself** (the sicha or maamar in the book or its
       scan), not only the search result or the notebook's answer. Confirm
       who says what: a notebook once put Rashi's words in the Rebbe's mouth.
@@ -60,7 +70,7 @@
         "en": ["<line 1>", "<line 2>"],
         "source": {
           "work": "<book and volume>",
-          "location": "<sicha or section, page>",
+          "location": "<sicha or section, page (or \"page not given\")>",
           "builds_on": "<an earlier source the idea builds on, if any>",
           "found_via": "<Torah MCP query, or the notebook>",
           "checked": "<how the passage itself was read>"
